@@ -1,0 +1,91 @@
+What is Locator?
+
+To identify the webelement in the webpage.
+
+8 Locators:
+===========
+1) ID
+2) Name
+3) Classname
+4) Tagname
+5) LinkText
+6) PartialLinkText
+7) X-Path
+8) CSS Selector
+
+X-Path:
+=======
+One of the locator. 
+
+Two types x-path:
+
+1) Relative xpath
+2) Absolute xpath
+
+1) Relative xpath:
+
+i) Single attribute
+
+//tagname[@attribute='value']
+
+//input[@id='email']
+//input[@name='email']
+//input[@class='inputtext _55r1 _6luy']
+//input[@data-testid='royal-email']
+//input[@placeholder='Email address or phone number']
+//input[@aria-label='Email address or phone number']
+
+
+ii) Multiple attribute
+//tagname[@attribute='value'][@attribute='value']
+
+//input[@class='_8esa'][@value='2']
+
+
+iii) Text()  function
+//tagname[text()='value']
+
+//a[text()='Forgotten password?']
+//a[text()='Create a Page']
+
+
+iv) contains() --> text(), attribute
+
+contains text():
+//tagname[contains(text(),'partial value')]
+
+//a[contains(text(),'rd')]
+
+contains attribute:
+
+//tagname[contains(@attribute, 'partial value')]
+
+
+
+v) starts-with() --> text(), attribute
+
+starts-with text():
+//tagname[starts-with(text(), 'starting_value')]
+
+//a[starts-with(text(),'Fo')]
+
+starts-with attribute:
+//tagname[starts-with(@attribute,'starting_value')]
+
+vi) normalize-space()
+//tagname[normalize-space(text()='value')]
+
+//button[normalize-space(text()='Login')]
+
+
+
+
+
+CSS Selector:
+
+# id
+. classname
+other attribute are used attribute name.
+
+*
+^
